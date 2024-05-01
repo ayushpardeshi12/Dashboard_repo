@@ -4,6 +4,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .Login {
@@ -118,7 +119,7 @@
   border: #000;
 }
 
-button {
+.login-btn {
   width: 20em;
   padding: 7px 0;
   border: none;
@@ -132,4 +133,100 @@ button {
   top: 120px;
   left: 710px;
   height: 4em;
+}
+
+/* Dashboard Starting */
+
+.main-div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/Images/Full-Wallpaper.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.list-icons {
+  display: flex;
+  float: right;
+  list-style-type: none;
+  padding: 0.8em 1em;
+}
+
+.list-icons li {
+  margin: 0 1em;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.clock-date-div #timer {
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.date-div {
+  display: flex;
+  justify-content: center;
+}
+
+.date-div p {
+  padding: 5px 3px;
+}
+
+.aside-icons {
+  float: right;
+  margin: 35px 15px 0 0;
+  padding: 25px 8px;
+  border-radius: 21px;
+  background-color: rgba(234, 221, 221, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.aside-icons li {
+  padding: 5px 0;
+}
+
+.aside-icons li img {
+  width: 59px;
+  height: 60px;
+}
+
+.footer-div {
+  position: relative;
+  bottom: -6.5em;
+}
+
+.footer-flex-div {
+  float: left;
+  padding: 0 0 0 20px;
+}
+
+.footer-img-div {
+  float: right;
+  padding: 0 20px 0 0;
+}
+
+.file-button {
+  padding: 3px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+}
+
+.file_options {
+  width: 100px;
+  height: 350px;
+  margin: 0 50px 150px 50px;
+  border-radius: 10px;
+  display: none;
+}
+.file_options ul {
+  list-style-type: none;
+  background: #fff;
+  text-align: center;
 }

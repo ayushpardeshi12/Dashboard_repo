@@ -1,6 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 function Login() {
+  const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const history = useHistory();
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    if (username === "admin" && password === "password") {
+      history.push("/main-dashboard");
+    } else {
+      alert("Invalid username or password");
+    }
+  };
+
+  const handleChange = (event) => {
+    event.preventDefault();
+  };
   return (
     <>
       <div className="Login">
@@ -27,6 +44,8 @@ function Login() {
                 name="username"
                 placeholder="Username"
                 className="username"
+                onChange={handleChange}
+                value={username}
                 required
               />
               <br />
@@ -35,6 +54,8 @@ function Login() {
                 name="password"
                 placeholder="Password"
                 className="password"
+                onChange={handleChange}
+                value={password}
                 required
               />
               <br />
@@ -43,7 +64,7 @@ function Login() {
                 <h3 className="rem-div">Remember Me</h3>
               </div>
               <br />
-              <button>Login</button>
+              <button className="login-btn">Login</button>
             </div>
           </div>
         </div>

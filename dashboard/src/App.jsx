@@ -1,10 +1,11 @@
 import "./App.css";
+// import MainDashboard from "./components/MainDashboard";
 import Login from "./components/Login";
 
-function App() {
   return (
     <>
       <Login />
+      {/* <MainDashboard /> */}
     </>
   );
 }
