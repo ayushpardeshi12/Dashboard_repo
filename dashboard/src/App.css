@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.Login {
+  position: relative;
+}
+
+.Login-bg {
+  display: flex;
+}
+
+.Login-bg img {
+  width: 50%;
+  height: 100vh;
+  z-index: -2;
+}
+
+.Login-bg .bg-image-1 {
+  border-top-right-radius: 6rem;
+  margin-right: 3px;
+}
+.Login-bg .bg-image-2 {
+  border-top-left-radius: 6rem;
+  margin-left: 3px;
+}
+
+.Login-bg-2 {
+  z-index: -1;
+  width: 42%;
+  height: 77vh;
+  background-color: rgba(234, 221, 221, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  filter: blur(15px);
+  backdrop-filter: blur(0px);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Login-profile {
+  background: url("../public/Images/blob__3_-removebg-preview.png");
+  background-repeat: no-repeat;
+  width: 244px;
+  height: 300px;
+  margin-left: -58px;
+}
+
+.Login-form {
+  z-index: 1;
+  width: 750px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Login-profile img {
+  width: 5.5em;
+
+  position: absolute;
+  top: 109px;
+  left: 170px;
+}
+
+.form {
+  margin-left: -90px;
+}
+
+.form h1 {
+  font-weight: 400;
+  font-size: 23px;
+  padding: 10px 0;
+  margin: 20px 5px;
+}
+
+.username,
+.password {
+  width: 20em;
+  padding: 7px 10px;
+  margin: 6px 0;
+  border-radius: 2em;
+  border: none;
+  background-color: rgba(65, 63, 63, 0.323);
+}
+
+.username::placeholder,
+.password::placeholder {
+  color: #000;
+  font-weight: 400;
+}
+
+.rem-check-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 126px;
+  height: 34px;
+}
+
+.rem-div {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px 6px;
+}
+
+.rem-check:checked {
+  background-color: rgba(72, 71, 71, 0);
+  border: #000;
+}
+
+button {
+  width: 20em;
+  padding: 7px 0;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.logo-rev {
+  position: absolute;
+  top: 120px;
+  left: 710px;
+  height: 4em;
+}
